@@ -1,5 +1,5 @@
 <?php 
 	
-	require ('vistas/contenido.view.html');
+	require ('vistas/contenido.view.php');
 
 ?>

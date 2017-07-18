@@ -10,7 +10,7 @@
 <body>
 	<div class="contenedor">
 		<h1 class="titulo">Contenido del titulo</h1>
-		<a href="#">Cerrar</a>
+		
 			<div class="contenido">
 				<article>
 					<p>
@@ -23,6 +23,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit non placeat debitis eaque facilis aperiam ducimus, quam labore, voluptate, ullam fuga et veniam magnam natus officia. Voluptate ipsa asperiores ipsam ullam est fuga veniam dolore ut nemo rerum odit officia, consequuntur aspernatur recusandae, molestias impedit perspiciatis ad sint fugit ex.
 					</p>
 				</article>
+				<a href="#" id="cerrar">Cerrar</a>
 			</div>
 	</div>
 	
