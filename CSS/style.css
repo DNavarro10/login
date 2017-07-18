@@ -10,7 +10,7 @@
 body {
 	font-size: 16px;
  	font-family:'Raleway', sans-serif;
-	background-color: #1b1d35;
+	background-color:#1b1d35;
 	color: #fff;
 }
 #cerrar{
@@ -32,7 +32,9 @@ body {
 	text-align: justify;
 }
 .contenido{
-	
+	background-color: rgba(41, 50, 147, 0.4);
+	padding: 30px;
+	margin-bottom: 20px;
 }
 .titulo {
 	font-weight: 300;
@@ -40,12 +42,12 @@ body {
 	text-align: center;
 	margin-bottom: 10px;
 	margin-top: 20px;
-	border-bottom: 4px solid #b8711b;
+	
 }
 
 .border{
 	border: none;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	border-bottom: 4px solid #b8711b;
 	background: none;
 	color: none;
@@ -55,10 +57,11 @@ body {
 .formulario .form-group{
 	width: 100%;
 	margin-bottom: 10px;
+	
 }
 
 .formulario input[type="text"],
-.formulario input[type="passwprd"]{
+.formulario input[type="password"]{
 	padding: 15px;
 	font-family: 'Raleway',sans-serif;
 	font-size: 18px;
@@ -70,10 +73,10 @@ body {
 	padding: 15px;
 	text-align: center;
 	width:48px;
-	max-height: 480px;
+	max-height: 48px;
 	font-size: 18px;
 	line-height: 18px;
-	background: #c8c8c8;
+	background-color: #c8c8c8;
 	display: inline-block;
 	color: #6b6b6b;
 	vertical-align: top;
@@ -91,6 +94,9 @@ body {
 	border-radius: 0 3px 3px 0;
 }
 
+.formulario .password_btn{
+	width: calc(100% - 105px);
+}
 .formulario .error ul{
 	padding: 0 15px;
 }
@@ -111,8 +117,9 @@ body {
 	color: #fff;
 	background: #769863;
 	cursor: pointer;
-	
-	border-right: 0 3px 3px 0;
+	margin-left: 4px;
+
+	border-right: 4px;
 }
 
 .texto-registrate{
@@ -136,23 +143,5 @@ body {
 	margin-bottom: 10px;
 	color: #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
