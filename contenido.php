@@ -1,5 +1,10 @@
-<?php 
+<?php session_start();
 	
-	require ('vistas/contenido.view.php');
+	if(isset($_SESSION['usuario'])){
+		require ('vistas/contenido.view.php');
+	} else {
+		header('Location: login.php');
+	}
+
 
 ?>

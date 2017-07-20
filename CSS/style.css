@@ -44,6 +44,11 @@ body {
 	padding: 30px;
 	margin-bottom: 20px;
 }
+.contenedor2{
+	width: 700px;
+	margin: auto;
+	max-width: 90%;
+}
 .titulo {
 	font-weight: 300;
 	color: #b8711b;
@@ -94,7 +99,7 @@ body {
 .formulario .icono.izquierda{
 	margin-right: 4px;
 	border-radius: 3px 0 0 3px;
-	
+	height: 48px;
 }
 
 .formulario .usuario,

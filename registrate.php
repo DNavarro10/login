@@ -43,7 +43,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		if ($resultado != false){
 			$errores .= '<li>El usuario ya existe</li>';
 		}
+		
+		/* hash de contraseña = convertir caracteres a x cantidad */
+		$password = hash('sha512', $password);
+		$password2 = hash('sha512', $password2);
+		
+		/* comprobar contraseñas */
+		if($password != $password2){
+			$errores .= '<li>Las contraseñas no son iguales</li>';
+		}
 	}
+	/* si error = '' , no hay errores*/
+	if($errores == ''){
+		$estado = $conexion->prepare('INSERT INTO usuarios (id, usuario, pass) 
+		VALUES (null, :usuario, :pass)');
+		
+		$estado ->execute(array(
+			':usuario'=> $usuario, 
+			':pass' => $password
+		));
+		
+		header('Location: login.php');
+	}
+
 }
 
 	/* Vista del formulario */
