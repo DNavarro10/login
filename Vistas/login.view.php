@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="contenedor">
-		<h1 class="titulo">Registrate</h1>
+		<h1 class="titulo">Login</h1>
 		<hr class="border">
 			<div class="contenido">
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="formulario" name="login" method="post">
@@ -28,11 +28,11 @@
 						</div>
 					<?php endif; ?>
 				</form>	
-				<p class="texto-registrate">
+			</div>
+			<p class="texto-registrate">
 				No tienes cuenta?
 				<a id="cerrar" href="registrate.php">Crear cuenta</a>
 			</p>
-			</div>
 	</div>
 	
 </body>
